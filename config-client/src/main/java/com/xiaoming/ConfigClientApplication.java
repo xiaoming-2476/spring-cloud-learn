@@ -15,6 +15,6 @@ public class ConfigClientApplication
     public static void main( String[] args )
     {
         SpringApplication.run(ConfigClientApplication.class,args);
-        System.out.println( "Hello World!" );
+        System.out.println( "Hello World! ConfigClient" );
     }
 }
