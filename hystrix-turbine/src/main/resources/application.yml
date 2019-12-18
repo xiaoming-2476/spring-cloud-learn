@@ -1,0 +1,16 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
+server:
+  port: 7009
+spring:
+  application:
+    name: hystrix-turbine
+turbine:
+  app-config: eureka-discovery-ribbon, eureka-discovery-feign
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
+  #更改turbine连接的默认uri ,默认为actuator/hystrix.stream
+  instanceUrlSuffix: hystrix.stream
