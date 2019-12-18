@@ -7,3 +7,6 @@ server:
 spring:
   application:
     name: service-hello
+feign:
+  hystrix:
+    enabled: true
