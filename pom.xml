@@ -13,10 +13,11 @@
         <module>config-server</module>
         <module>eureka-server</module>
         <module>gateway-service</module>
-        <module>serice-feign</module>
+        <module>service-feign</module>
         <module>service-hello</module>
         <module>hystrix-dashboard</module>
         <module>hystrix-turbine</module>
+        <module>eureka-zuul</module>
     </modules>
 
     <properties>

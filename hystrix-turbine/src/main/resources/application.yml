@@ -8,7 +8,7 @@ spring:
   application:
     name: hystrix-turbine
 turbine:
-  app-config: eureka-discovery-ribbon, eureka-discovery-feign
+  app-config: serice-feign, service-hello
   aggregator:
     cluster-config: default
   cluster-name-expression: new String("default")

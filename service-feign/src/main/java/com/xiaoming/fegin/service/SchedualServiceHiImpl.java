@@ -9,7 +9,7 @@ public class SchedualServiceHiImpl implements SchedualServiceHi {
     private String port;
     @Override
     public String sayHiFromClientOne() {
-        return "Hello world from "+port;
+        return "Hello world from service-feign "+port;
     }
 
     @Override

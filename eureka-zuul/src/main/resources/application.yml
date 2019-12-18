@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:7001/eureka/
+server:
+  port: 7010
+spring:
+  application:
+    name: eureka-zuul
+zuul:
+  routes:
+    api-ribbin:
+      path: /ribbon/*
+      serviceId: service-hello
+    api-feign:
+      path: /feign/*
+      serviceId: service-feign
